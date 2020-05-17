@@ -159,7 +159,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/05/17/git%E7%9A%84%E4%BD%BF%E7%94%A8/">git的使用</a>
+      <a class="article-title" href="/2020/05/17/git%E7%9A%84%E4%BD%BF%E7%94%A8/">使用git工具将项目上传至github</a>
     </h1>
   
 
@@ -173,9 +173,18 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="如何将本地项目上传到github仓库"><a href="#如何将本地项目上传到github仓库" class="headerlink" title="如何将本地项目上传到github仓库"></a>如何将本地项目上传到github仓库</h2><h3 id="安装git工具"><a href="#安装git工具" class="headerlink" title="安装git工具"></a>安装git工具</h3><p>—&gt;<a href="https://git-for-windows.github.io/" target="_blank" rel="noopener">https://git-for-windows.github.io/</a></p>
-<h3 id="创建一个github账号。"><a href="#创建一个github账号。" class="headerlink" title="创建一个github账号。"></a>创建一个github账号。</h3><p>—&gt;<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
+<h3 id="创建一个github账号"><a href="#创建一个github账号" class="headerlink" title="创建一个github账号"></a>创建一个github账号</h3><p>—&gt;<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p>
 <h3 id="新建一个github仓库-Repository"><a href="#新建一个github仓库-Repository" class="headerlink" title="新建一个github仓库(Repository)"></a>新建一个github仓库(Repository)</h3><p><img src="https://cdn.u1.huluxia.com/g4/M03/2F/93/rBAAdl7A_oaAW8iKAAC64toDb2M632.png" alt="newrepository.png"></p>
+<h3 id="打开新建的仓库"><a href="#打开新建的仓库" class="headerlink" title="打开新建的仓库"></a>打开新建的仓库</h3><p><img src="https://cdn.u1.huluxia.com/g4/M03/2F/99/rBAAdl7BAWmAACxEAADAr1rRvXM529.png" alt="open.png"></p>
+<p>点击<strong>Clone or dowload</strong>复制URL</p>
+<h3 id="把github上面的仓库克隆到本地"><a href="#把github上面的仓库克隆到本地" class="headerlink" title="把github上面的仓库克隆到本地"></a>把github上面的仓库克隆到本地</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https:&#x2F;&#x2F;github.com&#x2F;nexbin&#x2F;test</span><br></pre></td></tr></table></figure>
 
+<h3 id="将克隆到本地的文件与需要上传的文件放于同一项目文件夹下"><a href="#将克隆到本地的文件与需要上传的文件放于同一项目文件夹下" class="headerlink" title="将克隆到本地的文件与需要上传的文件放于同一项目文件夹下"></a>将克隆到本地的文件与需要上传的文件放于同一项目文件夹下</h3><h3 id="鼠标右键需要上传的项目"><a href="#鼠标右键需要上传的项目" class="headerlink" title="鼠标右键需要上传的项目"></a>鼠标右键需要上传的项目</h3><p>点击<strong>Git Bash Here</strong><br>显示如下内容<br><img src="https://cdn.u1.huluxia.com/g4/M01/2F/9C/rBAAdl7BAw6AfhYAAAAPjr08whM411.png" alt="gitbashhere"></p>
+<h3 id="依次输入以下代码即可完成上传"><a href="#依次输入以下代码即可完成上传" class="headerlink" title="依次输入以下代码即可完成上传"></a>依次输入以下代码即可完成上传</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$git add .        （别忘记后面的.）</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$git commit  -m  &quot;提交信息&quot;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$git push origin master   （把本地仓库push到github上面）</span><br></pre></td></tr></table></figure>
       
 
       
@@ -305,10 +314,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h1><hr>
-<h1 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h1><hr>
-<p>#安装Nodejs</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$ node -v #查看node版本</span><br><span class="line">$ npm -v #查看npm版本</span><br><span class="line">$ npm install -g cnpm --registry&#x3D;http:&#x2F;&#x2F;registry.npm.taobao.org #安装淘宝的cnpm 管理器</span><br><span class="line">$ cnpm -v #查看cnpm版本</span><br><span class="line">$ cnpm install -g hexo-cli #安装hexo框架</span><br><span class="line">$ hexo -v #查看hexo版本</span><br><span class="line">$ mkdir blog #创建blog目录</span><br><span class="line">$ cd blog #进入blog目录</span><br><span class="line">$ sudo hexo init #生成博客 初始化博客</span><br><span class="line">$ hexo s #启动本地博客服务</span><br></pre></td></tr></table></figure>
+        <h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><hr>
+<h2 id="安装Nodejs"><a href="#安装Nodejs" class="headerlink" title="安装Nodejs"></a>安装Nodejs</h2><p>$ node -v  (查看node版本)<br>$ npm -v  (查看npm版本)<br>$ npm install -g cnpm –registry=<a href="http://registry.npm.taobao.org" target="_blank" rel="noopener">http://registry.npm.taobao.org</a>  (安装淘宝的cnpm 管理器)<br>$ cnpm -v  (查看cnpm版本)</p>
+<h2 id="安装hexo框架"><a href="#安装hexo框架" class="headerlink" title="安装hexo框架"></a>安装hexo框架</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ hexo -v  (查看hexo版本)</span><br><span class="line">$ mkdir blog  (创建blog目录)</span><br><span class="line">$ cd blog  (进入blog目录)</span><br><span class="line">$ sudo hexo init  (生成博客 初始化博客)</span><br><span class="line">$ hexo s  (启动本地博客服务)</span><br></pre></td></tr></table></figure>
+
 <p><a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> #本地访问地址</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo n &quot;我的第一篇文章&quot; #创建新的文章</span><br></pre></td></tr></table></figure>
 <p>#返回blog目录</p>
@@ -316,8 +327,8 @@
 <p>#Github创建一个新的仓库 YourGithubName.github.io</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ cnpm install --save hexo-deployer-git #在blog目录下安装git部署插件</span><br></pre></td></tr></table></figure>
 <hr>
-<h1 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置_config.yml"></a>配置_config.yml</h1><hr>
-<h2 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h2><h3 id="Docs-https-hexo-io-docs-deployment-html"><a href="#Docs-https-hexo-io-docs-deployment-html" class="headerlink" title="Docs: https://hexo.io/docs/deployment.html"></a>Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a></h3><p>deploy:<br>type: git<br>repo: <a href="https://github.com/YourGithubName/YourGithubName.github.io.git" target="_blank" rel="noopener">https://github.com/YourGithubName/YourGithubName.github.io.git</a><br>branch: master</p>
+<h2 id="配置-config-yml"><a href="#配置-config-yml" class="headerlink" title="配置_config.yml"></a>配置_config.yml</h2><hr>
+<h3 id="Deployment"><a href="#Deployment" class="headerlink" title="Deployment"></a>Deployment</h3><h4 id="Docs-https-hexo-io-docs-deployment-html"><a href="#Docs-https-hexo-io-docs-deployment-html" class="headerlink" title="Docs: https://hexo.io/docs/deployment.html"></a>Docs: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">https://hexo.io/docs/deployment.html</a></h4><p>deploy:<br>type: git<br>repo: <a href="https://github.com/YourGithubName/YourGithubName.github.io.git" target="_blank" rel="noopener">https://github.com/YourGithubName/YourGithubName.github.io.git</a><br>branch: master</p>
 <hr>
 <p>hexo d #部署到Github仓库里<br><a href="https://YourGithubName.github.io/" target="_blank" rel="noopener">https://YourGithubName.github.io/</a> #访问这个地址可以查看博客</p>
 <p>git clone <a href="https://github.com/litten/hexo-theme-yilia.git" target="_blank" rel="noopener">https://github.com/litten/hexo-theme-yilia.git</a> themes/yilia #下载yilia主题到本地</p>
