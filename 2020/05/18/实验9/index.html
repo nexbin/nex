@@ -6,15 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>实验5 | CB的语言学习小屋</title>
+  <title>实验9 | CB的语言学习小屋</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
-<meta property="og:title" content="实验5">
+  <meta name="description" content="求2~ 100间的素数12345678910111213#include &lt;stdio.h&gt;int prime (int) ; &#x2F;&#x2F;prime函数声明int main(void)&amp;#123;     int m,flag;    for (m&#x3D;2;m&lt;&#x3D;100;m+&#x3D;1)    &amp;#123;         flag&#x3D;p">
+<meta property="og:type" content="article">
+<meta property="og:title" content="实验9">
 <meta property="og:url" content="http://yoursite.com/2020/05/18/%E5%AE%9E%E9%AA%8C9/index.html">
 <meta property="og:site_name" content="CB的语言学习小屋">
+<meta property="og:description" content="求2~ 100间的素数12345678910111213#include &lt;stdio.h&gt;int prime (int) ; &#x2F;&#x2F;prime函数声明int main(void)&amp;#123;     int m,flag;    for (m&#x3D;2;m&lt;&#x3D;100;m+&#x3D;1)    &amp;#123;         flag&#x3D;p">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-05-18T04:28:55.000Z">
-<meta property="article:modified_time" content="2020-05-18T04:30:31.547Z">
+<meta property="article:modified_time" content="2020-05-18T10:25:16.633Z">
 <meta property="article:author" content="nexbin">
 <meta property="article:tag" content="C#">
 <meta name="twitter:card" content="summary">
@@ -160,7 +162,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      实验5
+      实验9
     </h1>
   
 
@@ -173,7 +175,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="求2-100间的素数"><a href="#求2-100间的素数" class="headerlink" title="求2~ 100间的素数"></a>求2~ 100间的素数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int prime (int) ; &#x2F;&#x2F;prime函数声明</span><br><span class="line">int main(void)</span><br><span class="line">&#123; </span><br><span class="line">    int m,flag;</span><br><span class="line">    for (m&#x3D;2;m&lt;&#x3D;100;m+&#x3D;1)</span><br><span class="line">    &#123; </span><br><span class="line">        flag&#x3D;prime(m);</span><br><span class="line">        if(m&#x3D;&#x3D;flag)</span><br><span class="line">            printf(&quot;%4d&quot;,m);</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+ <a id="more"></a>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">int prime(int a)</span><br><span class="line">&#123;</span><br><span class="line">    int i, flag;</span><br><span class="line">    for(i&#x3D;2;i&lt;a;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        if (a%i&#x3D;&#x3D;0)</span><br><span class="line">            break; &#x2F;&#x2F;能被i整除，跳出循环</span><br><span class="line">        if(a&#x3D;&#x3D;i) </span><br><span class="line">            flag&#x3D;1; &#x2F;&#x2F;不能被i整除</span><br><span class="line">        else </span><br><span class="line">            flag&#x3D;0; &#x2F;&#x2F;i++直到a之前不能被i整除</span><br><span class="line">    &#125;</span><br><span class="line">    return i;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用三个函数分别求方程ax-2-bx-c-0的根"><a href="#使用三个函数分别求方程ax-2-bx-c-0的根" class="headerlink" title="使用三个函数分别求方程ax^2+bx+c=0的根"></a>使用三个函数分别求方程ax^2+bx+c=0的根</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;math.h&gt;</span><br><span class="line">void case1(void);&#x2F;&#x2F;delta&lt;0</span><br><span class="line">void case2(float,float,float);&#x2F;&#x2F;delta&#x3D;0</span><br><span class="line">void case3(float,float,float);&#x2F;&#x2F;delta&gt;0</span><br><span class="line"></span><br><span class="line">int main(void)</span><br><span class="line">&#123;   </span><br><span class="line">    float a,b,c,tmp;</span><br><span class="line">    printf(&quot;请输入a、b、c三个元素的值：&quot;);</span><br><span class="line">    scanf(&quot;%f %f %f&quot;,&amp;a,&amp;b,&amp;c);</span><br><span class="line">    tmp&#x3D;b*b-4.0*a*c;</span><br><span class="line">    if (tmp&lt;0)</span><br><span class="line">        case1();</span><br><span class="line">    else if(tmp&#x3D;&#x3D;0)</span><br><span class="line">        case2(a,b,c);</span><br><span class="line">    else</span><br><span class="line">        case3(a,b,c);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void case1(void)  </span><br><span class="line">&#123;</span><br><span class="line">    printf(&quot;不存在实数根.&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void case2(float a,float b,float c) </span><br><span class="line">&#123;  </span><br><span class="line">    printf(&quot;根为:%.2f\n&quot;,(-b&#x2F;(2*a)));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void case3(float a,float b,float c) </span><br><span class="line">&#123;   </span><br><span class="line">    float result1&#x3D;(-b+sqrt(b*b-4*a*c))&#x2F;(2*a);</span><br><span class="line">    float result2&#x3D;(-b-sqrt(b*b-4*a*c))&#x2F;(2*a);</span><br><span class="line">    printf(&quot;根为:%.2f和%.2f\n&quot;,result1,result2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
 
       
