@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>实验10(指针练习) | CB的语言学习小屋</title>
+  <title>ʵ��5 | CB的语言学习小屋</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.输入2个整数，交换顺序输出12345678910111213141516#include &lt;stdio.h&gt;void swap(int *a,int *b)&amp;#123;    int p&#x3D;*a;    *a&#x3D;*b;    *b&#x3D;p;&amp;#125;int main(void)&amp;#123;    int a,b;    printf(&quot;please">
+  <meta name="description" content="����1+����+(2n-1)ǰn��֮��for���ʵ��123456789101112#include &lt;stdio.h&gt;int main(void)&amp;#123;    long int s,n,k,i;    scanf(&quot;%ld&quot;,&amp;n);    k&#x3D;2*n-1;    s&#x3D;0;    for(i&#x3D;1;i&lt;&amp;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="实验10(指针练习)">
-<meta property="og:url" content="http://yoursite.com/2020/05/22/%E5%AE%9E%E9%AA%8C10/index.html">
+<meta property="og:title" content="ʵ��5">
+<meta property="og:url" content="http://yoursite.com/2020/06/01/%E5%AE%9E%E9%AA%8C4/index.html">
 <meta property="og:site_name" content="CB的语言学习小屋">
-<meta property="og:description" content="1.输入2个整数，交换顺序输出12345678910111213141516#include &lt;stdio.h&gt;void swap(int *a,int *b)&amp;#123;    int p&#x3D;*a;    *a&#x3D;*b;    *b&#x3D;p;&amp;#125;int main(void)&amp;#123;    int a,b;    printf(&quot;please">
+<meta property="og:description" content="����1+����+(2n-1)ǰn��֮��for���ʵ��123456789101112#include &lt;stdio.h&gt;int main(void)&amp;#123;    long int s,n,k,i;    scanf(&quot;%ld&quot;,&amp;n);    k&#x3D;2*n-1;    s&#x3D;0;    for(i&#x3D;1;i&lt;&amp;">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-05-22T09:59:51.000Z">
-<meta property="article:modified_time" content="2020-05-22T10:08:14.460Z">
+<meta property="article:published_time" content="2020-06-01T07:22:51.000Z">
+<meta property="article:modified_time" content="2020-06-01T07:27:51.771Z">
 <meta property="article:author" content="nexbin">
 <meta property="article:tag" content="C">
 <meta name="twitter:card" content="summary">
@@ -155,37 +155,33 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-实验10" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-实验4" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      实验10(指针练习)
+      ʵ��5
     </h1>
   
 
         
-        <a href="/2020/05/22/%E5%AE%9E%E9%AA%8C10/" class="archive-article-date">
-  	<time datetime="2020-05-22T09:59:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-22</time>
+        <a href="/2020/06/01/%E5%AE%9E%E9%AA%8C4/" class="archive-article-date">
+  	<time datetime="2020-06-01T07:22:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-01</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-输入2个整数，交换顺序输出"><a href="#1-输入2个整数，交换顺序输出" class="headerlink" title="1.输入2个整数，交换顺序输出"></a>1.输入2个整数，交换顺序输出</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">void swap(int *a,int *b)</span><br><span class="line">&#123;</span><br><span class="line">    int p&#x3D;*a;</span><br><span class="line">    *a&#x3D;*b;</span><br><span class="line">    *b&#x3D;p;</span><br><span class="line">&#125;</span><br><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">    int a,b;</span><br><span class="line">    printf(&quot;please enter two interger num:&quot;);</span><br><span class="line">    scanf(&quot;%d %d&quot;,&amp;a,&amp;b);</span><br><span class="line">    swap(&amp;a,&amp;b);</span><br><span class="line">    printf(&quot;after:%d %d&quot;,a,b);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h3 id="����1-����-2n-1-jn��֮��"><a href="#����1-����-2n-1-jn��֮��" class="headerlink" title="����1+����+(2n-1)ǰn��֮��"></a>����1+����+(2n-1)ǰn��֮��</h3><h4 id="for���ʵ��"><a href="#for���ʵ��" class="headerlink" title="for���ʵ��"></a>for���ʵ��</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">    long int s,n,k,i;</span><br><span class="line">    scanf(&quot;%ld&quot;,&amp;n);</span><br><span class="line">    k&#x3D;2*n-1;</span><br><span class="line">    s&#x3D;0;</span><br><span class="line">    for(i&#x3D;1;i&lt;&#x3D;k;i+&#x3D;2)</span><br><span class="line">        s+&#x3D;i;</span><br><span class="line">    printf(&quot;1+3+��+%ld&#x3D;%ld\n&quot;,k,s);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
+<h4 id="while���ʵ��"><a href="#while���ʵ��" class="headerlink" title="while���ʵ��"></a>while���ʵ��</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">    long int s&#x3D;0,n,i&#x3D;1;</span><br><span class="line">    scanf(&quot;%ld&quot;,&amp;n);</span><br><span class="line">    while(i&lt;&#x3D;2*n-1)</span><br><span class="line">        &#123;</span><br><span class="line">            s+&#x3D;i;</span><br><span class="line">            i+&#x3D;2;</span><br><span class="line">        &#125;</span><br><span class="line">    printf(&quot;1+3+��+%ld&#x3D;%ld\n&quot;,2*n-1,s);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-将数组倒序输出"><a href="#2-将数组倒序输出" class="headerlink" title="2.将数组倒序输出"></a>2.将数组倒序输出</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">void swap(int *a,int b)</span><br><span class="line">&#123;</span><br><span class="line">    int temp;</span><br><span class="line">    for(int i&#x3D;0;i&lt;&#x3D;b&#x2F;2-1;i++)</span><br><span class="line">        &#123;   </span><br><span class="line">            temp&#x3D;a[i];</span><br><span class="line">            a[i]&#x3D;a[b-i-1];</span><br><span class="line">            a[b-i-1]&#x3D;temp;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">    int a[10];</span><br><span class="line">    for(int i&#x3D;0;i&lt;10;i++)</span><br><span class="line">        scanf(&quot;%d&quot;,a+i);</span><br><span class="line">    swap(a,10);</span><br><span class="line">    for(int i&#x3D;0;i&lt;10;i++)</span><br><span class="line">        printf(&quot;%d &quot;,a[i]);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="do-while���ʵ��"><a href="#do-while���ʵ��" class="headerlink" title="do..while���ʵ��"></a>do..while���ʵ��</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">    long int s&#x3D;0,n,i&#x3D;1;</span><br><span class="line">    scanf(&quot;%d&quot;,&amp;n);</span><br><span class="line">    do</span><br><span class="line">        &#123;</span><br><span class="line">            s+&#x3D;i;</span><br><span class="line">            i+&#x3D;2;</span><br><span class="line">        &#125;while(i&lt;&#x3D;2*n-1);</span><br><span class="line">    printf(&quot;1+3+��+%ld&#x3D;%ld\n&quot;,2*n-1,s);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="3-将字符串a复制到字符串b"><a href="#3-将字符串a复制到字符串b" class="headerlink" title="3.将字符串a复制到字符串b"></a>3.将字符串a复制到字符串b</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">    char a[]&#x3D;&quot;I am a boy.&quot;,b[20],*p1,*p2;</span><br><span class="line">    int i;</span><br><span class="line">    p1&#x3D;a;p2&#x3D;b;</span><br><span class="line">    while(*p1!&#x3D;&#39;\0&#39;)</span><br><span class="line">        &#123;</span><br><span class="line">            *p2&#x3D;*p1;</span><br><span class="line">            p1++;</span><br><span class="line">            p2++;</span><br><span class="line">        &#125;</span><br><span class="line">    *p2&#x3D;&#39;\0&#39;;</span><br><span class="line">    printf(&quot;string a is:&quot;);</span><br><span class="line">    for(i&#x3D;0,p1&#x3D;a;*p1!&#x3D;&#39;\0&#39;;p1++)</span><br><span class="line">        printf(&quot;%c&quot;,*p1);</span><br><span class="line"></span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line"></span><br><span class="line">    printf(&quot;string b is:&quot;);</span><br><span class="line">    for(i&#x3D;0,p2&#x3D;b;*p2!&#x3D;&#39;\0&#39;;p2++)</span><br><span class="line">        printf(&quot;%c&quot;,*p2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-字符串比较-如相同输出0，否则输出ascii码差"><a href="#4-字符串比较-如相同输出0，否则输出ascii码差" class="headerlink" title="4.字符串比较,如相同输出0，否则输出ascii码差"></a>4.字符串比较,如相同输出0，否则输出ascii码差</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;stdlib.h&gt;</span><br><span class="line">int compare(char *,char *);</span><br><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">    </span><br><span class="line">    char a[100]&#x3D;&quot;\0&quot;,b[100]&#x3D;&quot;\0&quot;;</span><br><span class="line">    printf(&quot;%输入两个字符串:&quot;);</span><br><span class="line">    gets(a);</span><br><span class="line">    gets(b);</span><br><span class="line">    printf(&quot;%d\n&quot;,compare(a,b));</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line">int compare(char *p1,char *p2)</span><br><span class="line">&#123;</span><br><span class="line">    int i;</span><br><span class="line">    for(i&#x3D;0;*(p1+i)!&#x3D;&#39;\0&#39;;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            if(*(p1+i)!&#x3D;*(p2+i))</span><br><span class="line">                break;</span><br><span class="line">        &#125;</span><br><span class="line">    return *(p1+i)-*(p2+i);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="5-取出数组中的偶数构成十进制数"><a href="#5-取出数组中的偶数构成十进制数" class="headerlink" title="5.取出数组中的偶数构成十进制数"></a>5.取出数组中的偶数构成十进制数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">    char ch[2][5]&#x3D;&#123;&quot;1213&quot;, &quot;8421&quot;&#125;,*p[2];</span><br><span class="line">    int i,j,s&#x3D;0;</span><br><span class="line">    for (i&#x3D;0;i&lt;2;i++)</span><br><span class="line">        p[i]&#x3D;ch[i];</span><br><span class="line">    for (i&#x3D;0;i&lt;2;i++)</span><br><span class="line">        for (j&#x3D;0;p[i][j]&gt;&#39;0&#39;&amp;&amp;p[i][j]&lt;&#x3D;&#39;9&#39;;j+&#x3D;2)</span><br><span class="line">            s&#x3D;s*10+p[i][j]-&#39;0&#39;;</span><br><span class="line">    printf(&quot;%d&quot;,s); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<h3 id="�������������Լ������С������"><a href="#�������������Լ������С������" class="headerlink" title="�������������Լ������С������"></a>�������������Լ������С������</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line">    int a,b,temp&#x3D;1,j,k;</span><br><span class="line">    printf(&quot;��������������:&quot;);</span><br><span class="line">    scanf(&quot;%d %d&quot;,&amp;a,&amp;b);</span><br><span class="line">    j&#x3D;a;</span><br><span class="line">    k&#x3D;b;</span><br><span class="line">    while(1)</span><br><span class="line">        &#123;</span><br><span class="line">            temp&#x3D;a%b;</span><br><span class="line">            if (temp&#x3D;&#x3D;0)</span><br><span class="line">                break;</span><br><span class="line">            a&#x3D;b;</span><br><span class="line">            b&#x3D;temp;</span><br><span class="line">        &#125;</span><br><span class="line">    printf(&quot;%d,%d�����Լ��Ϊ%d,��С������Ϊ%d&quot;,j,k,b,j*k&#x2F;b);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
 
       
@@ -275,7 +271,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/05/22/%E5%AE%9E%E9%AA%8C10/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/01/%E5%AE%9E%E9%AA%8C4/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -289,18 +285,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/06/01/%E5%AE%9E%E9%AA%8C4/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          ʵ��5
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/05/18/%E5%AE%9E%E9%AA%8C9/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">实验9</div>
+    <a href="/2020/05/22/%E5%AE%9E%E9%AA%8C10/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">实验10(指针练习)</div>
       <i class="icon-circle-right"></i>
     </a>
   
